@@ -3,7 +3,7 @@ module github.com/enigmampc/SecretNetwork
 go 1.14
 
 require (
-	github.com/enigmampc/cosmos-sdk v0.9.0-scrt-no-mutex-3
+	github.com/enigmampc/cosmos-sdk v0.9.0-scrt-no-mutex-8
 	github.com/google/gofuzz v1.0.0
 	github.com/gorilla/mux v1.7.4
 	github.com/miscreant/miscreant.go v0.0.0-20200214223636-26d376326b75
@@ -19,3 +19,5 @@ require (
 	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79
 	gopkg.in/yaml.v2 v2.3.0
 )
+
+replace github.com/tendermint/tendermint v0.33.8 => github.com/enigmampc/tendermint v0.33.8-no-mutex-5
